@@ -46,8 +46,8 @@ ensembl = useDataset("hsapiens_gene_ensembl",mart=ensembl)
 
 
 # Retrieving the IDs column "entrez gene ids" from the Ensembl database by setiing an option to 'entrezgene_id' as a query while our gene list symbols were in 'external_gene_name' format. 
-# Always look for the id format in the imported gene list you are currently exploring.   
-and converting the to entrez gene ids.
+# Always look for the id format in the imported gene list you are currently exploring. If you do not know run listAttributes(ensembl) as as command adn look for matching ids info.   
+# Retrieving entrez gene ids from ensembl library.
 
 IDs <- getBM(attributes=c('external_gene_name','entrezgene_id'), 
              filters = 'external_gene_name', values = DGE_list$Gene_symbol, mart = ensembl)
