@@ -6,10 +6,10 @@ GSEA is a short and more interesting method as compared to looking for the biolo
 In GSEA, our list of multiple genes (look for the format in "DEGs.csv") were matched using knowledge-based method (using already trained/prepared datasets). In the current workflow, we used trained datasets from Molecular Signatures Database (MSigDB), Reactome Database, and Gene Ontology (GO) Database. The name of the main package in this workflow is "clusterProfiler". Alternative methods are availbe in DAVID, g:Profiler servers etc. 
 
 ## Intructions when using the scipt:
-(1) Make sure you have internet connection.
-(2) You need to know the name of the id format of genes in your list. 
-(3) Apply the cutoff for log2FC and adjusted p value (adjP) accordingly.
-(4) Remember to use the proper host id when performing the enrichment analysis.
+  * Make sure you have internet connection.
+  * You need to know the name of the id format of genes in your list. 
+  * Apply the cutoff for log2FC and adjusted p value (adjP) accordingly.
+  * Remember to use the proper host id when performing the enrichment analysis.
 
 ## Contact
 abdussalam@precisionmedicine.pk
